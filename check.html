@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Đức Long - Kỹ sư phần mềm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+        }
+        .header {
+            background-color: #161b22;
+            padding: 50px 20px;
+            border-bottom: 2px solid #30363d;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0.2em 0;
+            color: #58a6ff;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 0.2em 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #238636;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2ea043;
+        }
+        .section {
+            margin: 2em 0;
+            width: 100%;
+        }
+        .section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #58a6ff;
+            display: inline-block;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: left;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #30363d;
+        }
+        .card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+        .rating {
+            margin-top: 10px;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-top: 1.5em;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #30363d;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #79c0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Phạm Đức Long</h1>
+            <p>Kỹ sư phần mềm - Kỹ sư cầu nối Nhật</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+        <div id="about" class="content">
+            <div class="section">
+                <h2>Ngôn ngữ đã học</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/usa.png" alt="English">
+                        <h3>Tiếng Anh</h3>
+                        <p>Thành thạo trong giao tiếp và viết.</p>
+                        <div class="rating">Đánh giá: 8/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/japan.png" alt="Japanese">
+                        <h3>Tiếng Nhật</h3>
+                        <p>Kỹ năng giao tiếp trung cấp.</p>
+                        <div class="rating">Đánh giá: 6/10</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Ngôn ngữ lập trình</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML">
+                        <h3>HTML</h3>
+                        <p>Ngôn ngữ đánh dấu siêu văn bản.</p>
+                        <div class="rating">Đánh giá: 9/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+                        <h3>CSS</h3>
+                        <p>Ngôn ngữ tạo kiểu cho web.</p>
+                        <div class="rating">Đánh giá: 8/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                        <p>Ngôn ngữ lập trình cho web.</p>
+                        <div class="rating">Đánh giá: 7/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
+                        <h3>Java</h3>
+                        <p>Ngôn ngữ lập trình phổ biến.</p>
+                        <div class="rating">Đánh giá: 6/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
+                        <h3>C</h3>
+                        <p>Ngôn ngữ lập trình hệ thống.</p>
+                        <div class="rating">Đánh giá: 5/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
+                        <h3>C++</h3>
+                        <p>Ngôn ngữ lập trình hướng đối tượng.</p>
+                        <div class="rating">Đánh giá: 5/10</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL">
+                        <h3>SQL</h3>
+                        <p>Ngôn ngữ truy vấn cơ sở dữ liệu.</p>
+                        <div class="rating">Đánh giá: 7/10</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Dự án đã thực hiện</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/e-commerce.png" alt="E-commerce">
+                        <h3>Website bán hàng</h3>
+                        <p><a href="https://technew.netlify.app/index.html" target="_blank">Xem chi tiết</a></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/color/48/000000/review.png" alt="Review">
+                        <h3>Website review</h3>
+                        <p>Trang web đánh giá sản phẩm.</p>
+                    </div>
+                </div>
+            </div>
+            <p>Đã từng làm quản lý Truyền thông cho công ty cho thuê dịch vụ nghỉ dưỡng resort.</p>
+            <div class="quote">"Không có sự lựa chọn nào từ đầu đã chính xác. Chỉ là cố gắng để lựa chọn đó trở nên chính xác mà thôi."</div>
+        </div>
+        <div class="footer">
+            <p>© 2024 Phạm Đức Long. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
